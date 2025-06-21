@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla DOM</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="title">Original Title</h2>
+    <button onclick="changeTitle()">Change Title(Vanilla)</button>
+    <p>DOM Updates : <span id="count">0</span></p>
+</body>
+</html>
+<script>
+    let count = 0;
+    function changeTitle(){
+        document.getElementById('title').innerHTML = "Changed by vanilla JS";
+        count++;
+        document.getElementById('count').innerText = count;
+    }
+</script>
