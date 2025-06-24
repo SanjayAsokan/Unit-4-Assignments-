@@ -1,0 +1,35 @@
+.app {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+.controls {
+  display: flex;
+  
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.meme-grid {
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.meme-card {
+  border: 1px solid #9b5c5c;
+  padding: 10px;
+}
+.meme-card img {
+  max-width: 100%;
+  height: auto;
+}
+.app.dark {
+  background-color: #222;
+  color: white;
+}
+.app.light {
+  background-color: #f9f9f9;
+  color: black;
+}
